@@ -1,5 +1,55 @@
-#desktopNavbar{
+#desktopNavBar{
     width: 1440px;
     height: 178px;
-    border: solid 1px red;
+    background: url('./img/logo.svg') 165px 50%/161px no-repeat;
+}
+
+#desktopMenu{
+    width: 705px;
+    height: inherit;
+    padding-left: 69px;
+    display:inline-flex;
+    align-items: center;
+    background-color: var(--red);
+    float:right;
+}
+
+#desktopMenu div{
+    width: 223px;
+    margin-right: 49px;
+    display:inline-flex;
+    justify-content: space-between;
+}
+
+.menuButton{
+    height: 32px;
+    width: auto;
+    padding: 0px;
+    text-align: center;
+    font: 400 16px/1 'Commissioner-Regular';
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: text-shadow 0.3s ease;
+}
+
+.menuButton:hover{
+    text-shadow: 0 0 2px white;
+}
+
+#desktopMenu-scheduleBt{
+    width: auto;
+    height: 64px;
+    padding: 23px 45px;
+    background-color:var(--bgBlack);
+    color: white;
+    font: 400 16px/1 'Commissioner-ExtraBold';
+    border:none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#desktopMenu-scheduleBt:hover{
+    background-color:#434356;
 }
