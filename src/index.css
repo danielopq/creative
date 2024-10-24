@@ -1,3 +1,8 @@
+:root{
+    --red: #F94F4F; /*rgb(249,79,79) hsl(0,93%,64%)*/
+    --bgBlack: #191921; /*rgb(25,25,33) hsl(240,14%,11%)*/
+}
+
 *{
     box-sizing: border-box;
 }
