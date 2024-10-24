@@ -1,4 +1,4 @@
-import './navbar.css';
+import './navBar.css';
 
 /**
  * Renders the main navigation bar of the website
