@@ -29,11 +29,31 @@ body{
 main{
     width: 1440px;
     height: auto;
-    margin: 0px;
+}
+
+p,h1,h2,main,menu{
+    margin:0px;
     padding: 0px;
 }
 
-menu{
-    margin: 0px;
-    padding: 0px;
+h1{
+    font: 800 80px/88px 'Commissioner-ExtraBold';
+}
+
+.mainText{
+    font: 400 18px/32px 'Commissioner-Regular';
+}
+
+.standardButton{
+    width: auto;
+    background-color:var(--red);
+    color: white;
+    font: 400 16px/1 'Commissioner-ExtraBold';
+    border:none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.standardButton:hover{
+    background-color:#FF9393;
 }

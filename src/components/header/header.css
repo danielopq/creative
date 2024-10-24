@@ -1,5 +1,36 @@
 header{
     width: inherit;
     height: 800px;
-    border:solid 1px red;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+#header-mainContent{
+    width: 730px;
+    height: 528px;
+    margin: 122px -350px 0px 0px;
+    z-index: 1;
+}
+
+#header-mainContent h1{
+    color: black;
+}
+
+#header-mainContent p{
+    width: 540px;
+    margin-top: 39px;
+    color: black;
+}
+
+#header-button{
+    height: 72px;
+    padding: 25px 41px;
+    margin-top: 48px;
+}
+
+#header-mainPic{
+    width: 895px;
+    height: inherit;
+    background: url(./img/headerMainPic-desktop.jpg) center/895px no-repeat;
 }
