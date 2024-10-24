@@ -3,6 +3,16 @@
     --bgBlack: #191921; /*rgb(25,25,33) hsl(240,14%,11%)*/
 }
 
+@font-face {
+    font-family: 'Commissioner-Regular';
+    src: url('../src/assets/fonts/Commissioner-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Commissioner-ExtraBold';
+    src: url('../src/assets/fonts/Commissioner-ExtraBold.woff') format('woff');
+}
+
 *{
     box-sizing: border-box;
 }
