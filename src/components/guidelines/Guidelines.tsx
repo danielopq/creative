@@ -1,4 +1,5 @@
 import './guidelines.css';
+import Project from './project/Project';
 
 /**
  * Renders the brand naming and guidelines section, which includes a slideshow 
@@ -18,12 +19,7 @@ const Guidelines: React.FC = () => {
                     </nav>
                 </div>
             </div>
-            <div className="project">
-                <div className='projectDetails'>
-                    <p className='projectTitle'>Lean Product Roadmap</p>
-                    <p className='projectDate'>2019 Project</p>
-                </div>
-            </div>
+            <Project />
         </section>
     )
 }

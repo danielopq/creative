@@ -1,0 +1,24 @@
+.project{
+    width: 895px;
+    height: inherit;
+    padding: 596px 154px 0px 0px;
+    background: url('../../../public/img/lean.jpg') left/895px no-repeat;
+}
+
+.projectDetails{
+    width: auto;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    color: white;
+}
+
+.projectTitle{
+    font: 400 20px/32px 'Commissioner-ExtraBold';
+}
+
+.projectDate{
+    font: 400 18px/32px 'Commissioner-Regular';
+}
