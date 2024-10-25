@@ -1,5 +1,61 @@
 #approach{
     width: inherit;
     height: 895px;
-    border: solid 1px red;
+    margin-top: -200px;
+}
+
+#approach{
+    width: inherit;
+    height: 1100px;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+#approach h2{
+    width: 540px;
+    height: 192px;
+    margin: 400px -144px 0px 0px;
+    z-index: 1;
+    color: black;
+}
+
+#approach-content{
+    height: inherit;
+    width: 895px;
+    background-color: var(--red);
+}
+
+#approach-guidelines{
+    width: 504px;
+    height: auto;
+    display:flex;
+    margin: 200px 0px 0px 285px;
+    flex-direction: column;
+}
+
+.guideline-container{
+    color: white;
+    margin-bottom: 56px;
+}
+
+.guideline-point-number{
+    width: inherit;
+    height: 88px;
+    font: 800 80px/88px 'Commissioner-ExtraBold';
+    opacity:0.25;
+}
+
+.guideline-point-content{
+    width: 445px;
+    height: auto;
+    float: right;
+    margin-top: -44px;
+}
+
+.guideline-point-header{
+    width: inherit;
+    height: 32px;
+    font: 400 20px/32px 'Commissioner-ExtraBold';
+    margin-bottom: 24px;
 }
