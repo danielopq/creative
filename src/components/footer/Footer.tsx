@@ -1,9 +1,17 @@
 import './footer.css';
 
-const Footer:React.FC = () =>{
-    return(
+/**
+ * Renders the footer section of the website, which includes a call-to-action.
+ * 
+ * @returns {JSX.Element} - The rendered Footer component
+ */
+const Footer: React.FC = () => {
+    return (
         <footer>
-            
+            <div>
+                <h2>Let's build something great together.</h2>
+                <button className='standardButton'>Schedule a Call</button>
+            </div>
         </footer>
     )
 }

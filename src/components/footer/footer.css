@@ -1,4 +1,26 @@
 footer{
     width: inherit;
     height: 368px;
+    padding-top: 120px;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: url(./img/bg-pattern-wave-red.svg) -67px 154px/134px no-repeat ;
+}
+
+footer div{
+    width: 1110px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer h2{
+    width: 635px;
+    height: 133px;
+}
+
+footer button{
+    height: 64px;
+    padding: 0px 45px;
 }
