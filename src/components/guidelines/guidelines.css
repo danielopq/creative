@@ -1,0 +1,85 @@
+#guidelines{
+    width: inherit;
+    height: 728px;
+    display: inline-flex;
+}
+
+#guidelines-header{
+    width: 735px;
+    height: 528px;
+    margin-right: -190px;
+    padding: 152px 0px 152px 165px;
+    z-index: 1;
+    background-color: var(--bgBlack);
+}
+
+#guidelines-header > div{
+    width: 637px;
+    height: 224px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url('./img/bg-pattern-wavy-white.svg') 100% 34px / 134px no-repeat;
+}
+
+#guidelines-header h2{
+    width: 445px;
+    height: 133px;
+    color: white;
+}
+
+#guidelines-navBar{
+    width: 96px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.guidelines-navBar-bt{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent center/40px no-repeat;
+    cursor: pointer;
+}
+
+#previousBt{
+    background-image: url('./img/icon-arrow-previous.svg');
+}
+
+#previousBt:hover{
+    background-image: url('./img/icon-arrow-previous-hover.svg');
+}
+
+#nextBt{
+    background-image: url('./img/icon-arrow-next.svg');
+}
+
+#nextBt:hover{
+    background-image: url('./img/icon-arrow-next-hover.svg');
+}
+
+.project{
+    width: 895px;
+    height: inherit;
+    padding: 596px 154px 0px 0px;
+    background: url('../../../public/img/lean.jpg') left/895px no-repeat;
+}
+
+.projectDetails{
+    width: auto;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    color: white;
+}
+
+.projectTitle{
+    font: 400 20px/32px 'Commissioner-ExtraBold';
+}
+
+.projectDate{
+    font: 400 18px/32px 'Commissioner-Regular';
+}

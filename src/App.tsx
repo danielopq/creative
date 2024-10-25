@@ -1,4 +1,4 @@
-import { NavBar, Header, Design, Approach, BrandNaming, Footer } from "./components"
+import { NavBar, Header, Design, Approach, Guidelines, Footer } from "./components"
 
 const App: React.FC = () => {
   return (
@@ -8,7 +8,7 @@ const App: React.FC = () => {
         <Header />
         <Design />
         <Approach />
-        <BrandNaming />
+        <Guidelines />
         <Footer />
       </main>
     </>
