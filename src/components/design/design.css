@@ -1,5 +1,49 @@
 #design{
     width: inherit;
     height: 984px;
-    border: solid 1px red;
+    display: inline-flex;
+}
+
+#design-mainPic{
+    width: 735px;
+    height: inherit;
+    background: url('./img/designMainPic-desktop.jpg') center/735px no-repeat;
+}
+
+#design-content{
+    width: 705px;
+    height: inherit;
+    padding-top: 200px;
+    background-color: var(--bgBlack);
+}
+
+#design-content > div{
+    width: 666px;
+    height: 384px;
+    margin-left: -67px;
+    padding-left: 221px;
+    background: url('./img/bg-pattern-wave-red.svg') 0% 34px/135px no-repeat;
+    color:white;
+}
+
+#design-content p{
+    margin-top: 43px;
+}
+
+#design-button{
+    width: 124px;
+    height: 30px;
+    margin-top: 48px;
+    padding: 0px 0px 8px 0px;
+    font: 400 18px/22px 'Commissioner-ExtraBold';
+    background-color: transparent;
+    color: var(--red);
+    border-bottom: solid 2px var(--red);
+    transition: color 0.3s ease,border-bottom-color 0.3s ease;
+    cursor: pointer;
+}
+
+#design-button:hover{
+    color: #FF9393;
+    border-bottom-color: #FF9393;
 }

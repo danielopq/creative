@@ -40,6 +40,10 @@ h1{
     font: 800 80px/88px 'Commissioner-ExtraBold';
 }
 
+h2{
+    font: 800 56px/64px 'Commissioner-ExtraBold';
+}
+
 .mainText{
     font: 400 18px/32px 'Commissioner-Regular';
 }
