@@ -24,3 +24,28 @@ footer button{
     height: 64px;
     padding: 0px 45px;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    footer{
+        width: inherit;
+        height: 251px;
+        padding-top: 70px;
+        display: inline-flex;
+        background: none;
+    }
+    
+    footer div{
+        width: 689px;
+    }
+    
+    footer h2{
+        width: 398px;
+        height: 80px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
