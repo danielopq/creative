@@ -1,11 +1,24 @@
 import './project.css';
 
-const Project: React.FC = () => {
+interface ProjectProps{
+    projectTitle:string;
+    projectDate:string;
+    backgroundPicture:string;
+    zIndex:number;
+    opacity:number;
+}
+
+const Project: React.FC<ProjectProps> = ({projectTitle,projectDate,backgroundPicture,zIndex,opacity,}) => {
+    const divStyle:React.CSSProperties = {
+        opacity: opacity,
+        backgroundImage: `url(${backgroundPicture})`,
+        zIndex:zIndex
+    };
     return (
-        <div className="project">
+        <div className="project" style={divStyle}>
             <div className='projectDetails'>
-                <p className='projectTitle'>Lean Product Roadmap</p>
-                <p className='projectDate'>2019 Project</p>
+                <p className='projectTitle'>{projectTitle}</p>
+                <p className='projectDate'>{projectDate}</p>
             </div>
         </div>
     )

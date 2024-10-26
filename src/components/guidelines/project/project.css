@@ -2,7 +2,10 @@
     width: 895px;
     height: inherit;
     padding: 596px 154px 0px 0px;
-    background: url('../../../public/img/lean.jpg') left/895px no-repeat;
+    background: left/895px no-repeat;
+    position: absolute;
+    margin-left: 545px;
+    transition: opacity 0.8s ease;
 }
 
 .projectDetails{
