@@ -15,6 +15,8 @@ const Guidelines: React.FC = () => {
 
     const [currentProject, setCurrentProject] = useState<number>(0);
     const [projectsOpacity, setProjectsOpacity] = useState<Opacities>([0, 0, 1]);
+    const [timer, setTimer] = useState<number>(0);
+    const [intervalId, setIntervalId] = useState<NodeJS.Timeout | null>(null);
 
     const displayProject = (projectNumber: number) => {
         let newOpacities: Opacities = [0, 0, 0];
