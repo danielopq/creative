@@ -1,6 +1,8 @@
-:root{
-    --red: #F94F4F; /*rgb(249,79,79) hsl(0,93%,64%)*/
-    --bgBlack: #191921; /*rgb(25,25,33) hsl(240,14%,11%)*/
+:root {
+    --red: #F94F4F;
+    /*rgb(249,79,79) hsl(0,93%,64%)*/
+    --bgBlack: #191921;
+    /*rgb(25,25,33) hsl(240,14%,11%)*/
 }
 
 @font-face {
@@ -13,11 +15,11 @@
     src: url('../src/assets/fonts/Commissioner-ExtraBold.woff') format('woff');
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100vw;
     height: 100vh;
     margin: 0px;
@@ -28,47 +30,62 @@ body{
     justify-content: flex-start;
 }
 
-main{
+main {
     width: 1440px;
     height: auto;
 }
 
-p,h1,h2,main,menu{
-    margin:0px;
+p,
+h1,
+h2,
+main,
+menu {
+    margin: 0px;
     padding: 0px;
 }
 
-h1{
+h1 {
     font: 800 80px/88px 'Commissioner-ExtraBold';
 }
 
-h2{
+h2 {
     font: 800 56px/64px 'Commissioner-ExtraBold';
 }
 
-.mainText{
+.mainText {
     font: 400 18px/32px 'Commissioner-Regular';
 }
 
-.standardButton{
+.standardButton {
     width: auto;
-    background-color:var(--red);
+    background-color: var(--red);
     color: white;
     font: 400 16px/1 'Commissioner-ExtraBold';
-    border:none;
+    border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.standardButton:hover{
-    background-color:#FF9393;
+@media(hover:hover) {
+    .standardButton:hover {
+        background-color: #FF9393;
+    }
 }
+
 
 /*############################## TABLET VERSION ##############################*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    main{
+    main {
         width: 768px;
+    }
+
+    h1 {
+        font: 800 56px/56px 'Commissioner-ExtraBold';
+    }
+
+    .mainText {
+        font: 400 15px/25px 'Commissioner-Regular';
     }
 }
 

@@ -34,3 +34,37 @@ header{
     height: inherit;
     background: url(./img/headerMainPic-desktop.jpg) center/895px no-repeat;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header{
+        height: 606px;
+    }
+    
+    #header-mainContent{
+        width: 398px;
+        height: 379px;
+        margin: 77px -107px 0px 0px;
+    }
+
+    #header-mainContent p{
+        width: 398px;
+        margin-top: 19px;
+    }
+    
+    #header-button{
+        height: 72px;
+        padding: 25px 41px;
+        margin-top: 32px;
+    }
+    
+    #header-mainPic{
+        width: 438px;
+        background: url(./img/headreMainPic-tablet.jpg) center/438px no-repeat;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
