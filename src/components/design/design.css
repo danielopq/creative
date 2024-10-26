@@ -43,7 +43,54 @@
     cursor: pointer;
 }
 
-#design-button:hover{
-    color: #FF9393;
-    border-bottom-color: #FF9393;
+@media(hover:hover){
+    #design-button:hover{
+        color: #FF9393;
+        border-bottom-color: #FF9393;
+    }
 }
+
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #design{
+        width: inherit;
+        height: 658px;
+    }
+    
+    #design-mainPic{
+        width: 378px;
+        background: url('./img/designMainPic-tablet.jpg') center/378px no-repeat;
+    }
+    
+    #design-content{
+        width: 390px;
+        padding-top: 120px;
+    }
+    
+    #design-content > div{
+        width: 382px;
+        height: 298px;
+        margin-left: -32px;
+        padding-left: 101px;
+        background: url('./img/bg-pattern-wave-red.svg') 0% 25px/63px no-repeat;
+        color:white;
+    }
+    
+    #design-content p{
+        margin-top: 32px;
+    }
+    
+    #design-button{
+        width: 103px;
+        height: 29px;
+        margin-top: 32px;
+        padding: 0px 0px 9px 0px;
+        font: 400 15px/18px 'Commissioner-ExtraBold';
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
