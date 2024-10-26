@@ -1,10 +1,10 @@
-#guidelines{
+#guidelines {
     width: inherit;
     height: 728px;
     display: inline-flex;
 }
 
-#guidelines-header{
+#guidelines-header {
     width: 735px;
     height: 528px;
     margin-right: -190px;
@@ -13,7 +13,7 @@
     background-color: var(--bgBlack);
 }
 
-#guidelines-header > div{
+#guidelines-header>div {
     width: 637px;
     height: 224px;
     display: flex;
@@ -22,20 +22,20 @@
     background: url('./img/bg-pattern-wavy-white.svg') 100% 34px / 134px no-repeat;
 }
 
-#guidelines-header h2{
+#guidelines-header h2 {
     width: 445px;
     height: 133px;
     color: white;
 }
 
-#guidelines-navBar{
+#guidelines-navBar {
     width: 96px;
     height: 40px;
     display: inline-flex;
     justify-content: space-between;
 }
 
-.guidelines-navBar-bt{
+.guidelines-navBar-bt {
     width: 40px;
     height: 40px;
     border: none;
@@ -43,25 +43,60 @@
     cursor: pointer;
 }
 
-#previousBt{
+#previousBt {
     background-image: url('./img/icon-arrow-previous.svg');
 }
 
-#previousBt:hover{
-    background-image: url('./img/icon-arrow-previous-hover.svg');
+@media(hover:hover) {
+    #previousBt:hover {
+        background-image: url('./img/icon-arrow-previous-hover.svg');
+    }
+
 }
 
-#nextBt{
+#nextBt {
     background-image: url('./img/icon-arrow-next.svg');
 }
 
-#nextBt:hover{
-    background-image: url('./img/icon-arrow-next-hover.svg');
+@media(hover:hover) {
+    #nextBt:hover {
+        background-image: url('./img/icon-arrow-next-hover.svg');
+    }
 }
 
 /*############################## TABLET VERSION ##############################*/
 
-@media (min-width: 768px) and (max-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 1024px) {
+    #guidelines {
+        width: inherit;
+    }
+    
+    #guidelines-header {
+        width: 390px;
+        height: 352px;
+        margin-right: -60px;
+        padding: 100px 0px 100px 39px;
+    }
+    
+    #guidelines-header>div {
+        width: 382px;
+        height: 152px;
+        background: url('./img/bg-pattern-wavy-white.svg') 100% 26px / 62px no-repeat;
+    }
+    
+    #guidelines-header h2 {
+        width: 281px;
+        height: 80px;
+    }
+    
+    .guidelines-navBar-bt {
+        width: 40px;
+        height: 40px;
+        border: none;
+        background: transparent center/40px no-repeat;
+        cursor: pointer;
+    }
+}
 
 /*############################## MOBILE VERSION ##############################*/
 
