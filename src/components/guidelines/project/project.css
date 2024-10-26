@@ -2,7 +2,7 @@
     width: 895px;
     height: inherit;
     padding: 596px 154px 0px 0px;
-    background: left/895px no-repeat;
+    background: center/895px no-repeat;
     position: absolute;
     margin-left: 545px;
     transition: opacity 1s ease-in-out;
@@ -16,6 +16,7 @@
     justify-content: space-between;
     text-align: right;
     color: white;
+    float: right;
 }
 
 .projectTitle{
@@ -25,3 +26,30 @@
 .projectDate{
     font: 400 18px/32px 'Commissioner-Regular';
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .project{
+        width: 438px;
+        padding: 390px 40px 0px 0px;
+        background: right/580px no-repeat;
+        margin-left: 330px;
+    }
+    
+    .projectDetails{
+        height: 40px;
+    }
+    
+    .projectTitle{
+        font: 400 15px/20px 'Commissioner-ExtraBold';
+    }
+    
+    .projectDate{
+        font: 400 15px/20px 'Commissioner-Regular';
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}

@@ -69,6 +69,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     #guidelines {
         width: inherit;
+        height: 472px;
     }
     
     #guidelines-header {
