@@ -1,12 +1,7 @@
 #approach{
     width: inherit;
-    height: 895px;
-    margin-top: -200px;
-}
-
-#approach{
-    width: inherit;
     height: 1100px;
+    margin-top: -200px;
     display: inline-flex;
     align-items: flex-start;
     justify-content: flex-end;
@@ -59,3 +54,49 @@
     font: 400 20px/32px 'Commissioner-ExtraBold';
     margin-bottom: 24px;
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #approach{
+        height: 797px;
+        margin-top: -120px;
+    }
+    
+    #approach h2{
+        width: 284px;
+        height: 120px;
+        margin: 246px 10px 0px 0px;
+    }
+    
+    #approach-content{
+        width: 438px;
+    }
+    
+    #approach-guidelines{
+        width: 355px;
+        margin: 120px 0px 0px 43px;
+    }
+    
+    .guideline-container{
+        margin-bottom: 40px;
+    }
+
+    .guideline-point-content{
+        width: 339px;
+        height: auto;
+        float: right;
+        margin-top: -44px;
+    }
+    
+    .guideline-point-header{
+        width: inherit;
+        height: 25px;
+        font: 400 15px/25px 'Commissioner-ExtraBold';
+        margin-bottom: 15px;
+    }
+}
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
