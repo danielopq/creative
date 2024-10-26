@@ -84,6 +84,10 @@ h2 {
         font: 800 56px/56px 'Commissioner-ExtraBold';
     }
 
+    h2 {
+        font: 800 32px/40px 'Commissioner-ExtraBold';
+    }
+
     .mainText {
         font: 400 15px/25px 'Commissioner-Regular';
     }
