@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './guidelines.css';
 import Project from './project/Project';
 
@@ -6,8 +6,8 @@ import Project from './project/Project';
 type Opacities = number[];
 
 /**
- * Renders the brand naming and guidelines section, which includes a slideshow 
- * showcasing examples of different projects.
+ * Renders the Guidelines component, which includes a brand naming and guidelines section
+ * along with a slideshow showcasing examples of various projects.
  * 
  * @returns {JSX.Element} - The rendered Guidelines component.
  */
@@ -15,9 +15,19 @@ const Guidelines: React.FC = () => {
 
     const [currentProject, setCurrentProject] = useState<number>(0);
     const [projectsOpacity, setProjectsOpacity] = useState<Opacities>([0, 0, 1]);
-    const [timer, setTimer] = useState<number>(0);
-    const [intervalId, setIntervalId] = useState<NodeJS.Timeout | null>(null);
 
+    useEffect(() => {
+        const logTime = () => {
+            navigateSlide('next');
+        };
+        const intervalId = setInterval(logTime, 5000);
+        return () => clearInterval(intervalId);
+    }, [currentProject]);
+
+    /**
+     * Updates the displayed project based on the selected index.
+     * @param {number} projectNumber - The index of the project to display.
+     */
     const displayProject = (projectNumber: number) => {
         let newOpacities: Opacities = [0, 0, 0];
         newOpacities[projectNumber] = 1;
@@ -25,6 +35,10 @@ const Guidelines: React.FC = () => {
         setCurrentProject(projectNumber);
     }
 
+    /**
+     * Navigates to the next or previous project in the slideshow.
+     * @param {'previous' | 'next'} direction - The direction to navigate. Use 'next' for the next project or 'previous' for the previous project.
+     */
     const navigateSlide = (direction: 'previous' | 'next') => {
         if (direction === 'previous') {
             currentProject === 0 ? displayProject(projectsOpacity.length - 1) : displayProject(currentProject - 1);
