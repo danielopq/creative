@@ -34,8 +34,10 @@
     transition: text-shadow 0.3s ease;
 }
 
-.menuButton:hover{
-    text-shadow: 0 0 2px white;
+@media(hover:hover){
+    .menuButton:hover{
+        text-shadow: 0 0 2px white;
+    }    
 }
 
 #desktopMenu-scheduleBt{
@@ -50,6 +52,41 @@
     transition: background-color 0.3s ease;
 }
 
-#desktopMenu-scheduleBt:hover{
-    background-color:#434356;
+@media(hover:hover){
+    #desktopMenu-scheduleBt:hover{
+        background-color:#434356;
+    } 
 }
+
+/*############################## TABLET VERSION ##############################*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #desktopNavBar{
+        width: inherit;
+        background-position: 39px 50%;
+    }
+    
+    #desktopMenu{
+        width: 438px;
+        height: inherit;
+        padding-left: 33px;
+    }
+    
+    #desktopMenu div{
+        width: 190px;
+        margin-right: 28px;
+    }
+    
+    .menuButton{
+        font: 400 15px/1 'Commissioner-Regular';
+    }
+    
+    #desktopMenu-scheduleBt{
+        padding: 23px 19px;
+    }
+}
+
+
+/*############################## MOBILE VERSION ##############################*/
+
+@media screen and (max-width:767px) {}
