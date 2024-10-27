@@ -1,4 +1,4 @@
-import {useState } from 'react';
+import {useEffect, useState } from 'react';
 import './guidelines.css';
 import Project from './project/Project';
 
@@ -16,13 +16,13 @@ const Guidelines: React.FC = () => {
     const [currentProject, setCurrentProject] = useState<number>(0);
     const [projectsOpacity, setProjectsOpacity] = useState<Opacities>([1, 0, 0]);
 
-    // useEffect(() => {
-    //     const logTime = () => {
-    //         navigateSlide('next');
-    //     };
-    //     const intervalId = setInterval(logTime, 5000);
-    //     return () => clearInterval(intervalId);
-    // }, [currentProject]);
+    useEffect(() => {
+        const logTime = () => {
+            navigateSlide('next');
+        };
+        const intervalId = setInterval(logTime, 5000);
+        return () => clearInterval(intervalId);
+    }, [currentProject]);
 
     /**
      * Updates the displayed project based on the selected index.
@@ -60,8 +60,8 @@ const Guidelines: React.FC = () => {
             </div>
             
             <Project projectTitle='Lean Product Roadmap' projectDate='2019 Project' backgroundPicture='/img/lean.jpg' zIndex={3} opacity={projectsOpacity[0]} />,
-            {/* <Project projectTitle='New Majestic Hotel' projectDate='2018 Project' backgroundPicture='/img/majestic.jpg' zIndex={2} opacity={projectsOpacity[1]} />,
-            <Project projectTitle='Crypto Dashboard' projectDate='2016 Project' backgroundPicture='/img/cripto.jpg' zIndex={1} opacity={projectsOpacity[2]} />,  */}
+            <Project projectTitle='New Majestic Hotel' projectDate='2018 Project' backgroundPicture='/img/majestic.jpg' zIndex={2} opacity={projectsOpacity[1]} />,
+            <Project projectTitle='Crypto Dashboard' projectDate='2016 Project' backgroundPicture='/img/cripto.jpg' zIndex={1} opacity={projectsOpacity[2]} />, 
         </section>
     )
 }
