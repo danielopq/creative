@@ -79,7 +79,7 @@ header{
     #header-mainContent{
         width: inherit;
         height: 508px;
-        margin: 56px 0px 0px;
+        margin: 56px 0px 0px 25px;
     }
 
     #header-mainContent p{
