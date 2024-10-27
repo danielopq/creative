@@ -25,18 +25,18 @@ const NavBar: React.FC = () => {
         <nav id="desktopNavBar">
             <menu id="desktopMenu">
                 <div>
-                    <button className='menuButton'>About</button>
-                    <button className='menuButton'>Service</button>
-                    <button className='menuButton'>Projects</button>
+                    <button className='menuButton' aria-label="About">About</button>
+                    <button className='menuButton' aria-label="Service">Service</button>
+                    <button className='menuButton' aria-label="Projects">Projects</button>
                 </div>
                 <button id="desktopMenu-scheduleBt" className='standardButton'>Schedule a Call</button>
             </menu>
             <button ref={refMobileIcon} id="mobileIcon" className='mobileIconBurger' onClick={() => handleClick()}></button>
             <menu id="mobileMenu">
                 <div>
-                    <button className='menuButton'>About</button>
-                    <button className='menuButton'>Service</button>
-                    <button className='menuButton'>Projects</button>
+                    <button className='menuButton' aria-label="About">About</button>
+                    <button className='menuButton' aria-label="Service">Service</button>
+                    <button className='menuButton' aria-label="Projects">Projects</button>
                     <button id="mobileMenu-scheduleBt" className='standardButton'>Schedule a Call</button>
                 </div>
             </menu>

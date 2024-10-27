@@ -20,7 +20,7 @@ const Design: React.FC = () => {
                         and brand awareness. We are firm believers that success lies in creative
                         collaboration with our clients.”
                     </p>
-                    <div id="design-button">Schedule a Call</div>
+                    <div id="design-button" aria-label="Schedule a Call">Schedule a Call</div>
                 </div>
             </div>
         </section>

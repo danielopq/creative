@@ -19,7 +19,7 @@ const Header:React.FC = () => {
                     small businesses, giving lasting impressions to
                     audiences in a digital world.
                 </p>
-                <button id="header-button" className='standardButton'>Learn More</button>
+                <button id="header-button" aria-label="Learn more" className='standardButton'>Learn More</button>
             </div>
             <div id="header-mainPic"></div>
         </header>

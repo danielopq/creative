@@ -53,8 +53,8 @@ const Guidelines: React.FC = () => {
                 <div>
                     <h2>Brand naming & guidelines</h2>
                     <nav id="guidelines-navBar">
-                        <button id="previousBt" className='guidelines-navBar-bt' onClick={() => navigateSlide('previous')}></button>
-                        <button id="nextBt" className='guidelines-navBar-bt' onClick={() => navigateSlide('next')}></button>
+                        <button id="previousBt" aria-label="Previous project" className='guidelines-navBar-bt' onClick={() => navigateSlide('previous')}></button>
+                        <button id="nextBt" aria-label="Next project" className='guidelines-navBar-bt' onClick={() => navigateSlide('next')}></button>
                     </nav>
                 </div>
             </div>

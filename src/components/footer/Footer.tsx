@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <footer>
             <div>
                 <h2>Let's build something great together.</h2>
-                <button className='standardButton'>Schedule a Call</button>
+                <button className='standardButton' aria-label="Schedule a Call">Schedule a Call</button>
             </div>
         </footer>
     )
