@@ -93,4 +93,44 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #design{
+        width: inherit;
+        height: 577px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #design-mainPic{
+        width: inherit;
+        height: 200px;
+        background: url('./img/designMainPic-mobile.jpg') center/375px no-repeat;
+    }
+    
+    #design-content{
+        width: inherit;
+        height: 377px;
+        padding-top: 0px;
+    }
+    
+    #design-content > div{
+        width: 327px;
+        height: 320px;
+        margin: -15px 0px 0px;
+        padding: 87px 0px 0px 24px;
+        background: url('./img/bg-pattern-wave-red.svg') 25px 0%/63px no-repeat;
+    }
+    
+    #design-content p{
+        width: 327px;
+        margin-top: 24px;
+    }
+    
+    #design-button{
+        width: 103px;
+        height: 29px;
+        margin-top: 40px;
+        padding: 0px 0px 9px 0px;
+        font: 400 15px/18px 'Commissioner-ExtraBold';
+    }
+}
