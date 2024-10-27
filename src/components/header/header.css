@@ -75,16 +75,21 @@ header{
         align-items: center;
         justify-content: flex-start;
     }
-    
+
     #header-mainContent{
-        width: inherit;
+        width: 350px;
         height: 508px;
         margin: 56px 0px 0px 25px;
+    }
+
+    #header-mainContent h1{
+        width: 350px;
     }
 
     #header-mainContent p{
         width: 327px;
         margin-top: 15px;
+        
     }
     
     #header-button{
