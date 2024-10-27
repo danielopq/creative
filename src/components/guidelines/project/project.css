@@ -52,4 +52,28 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    .project{
+        width: inherit;
+        height: 370px;
+        padding: 298px 32px 0px 0px;
+        background: top/460px no-repeat;
+        position: absolute;
+        margin-left: 0px;
+        margin-bottom: 272px;
+    }
+
+    
+    .projectDetails{
+        width: auto;
+        height: 40px;
+    }
+    
+    .projectTitle{
+        font: 400 15px/20px 'Commissioner-ExtraBold';
+    }
+    
+    .projectDate{
+        font: 400 15px/20px 'Commissioner-Regular';
+    }
+}

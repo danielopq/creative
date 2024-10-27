@@ -101,4 +101,28 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #guidelines {
+        height: 642px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    #guidelines-header {
+        width: inherit;
+        height: 272px;
+        margin-right: 0px;
+        padding: 64px 24px 0px;
+    }
+
+    #guidelines-header>div {
+        width: 327px;
+        height: 144px;
+        background: none;
+    }
+    
+    #guidelines-header h2 {
+        width: 327px;
+        height: 80px;
+    }
+}
