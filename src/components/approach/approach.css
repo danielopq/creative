@@ -101,59 +101,43 @@
 
 @media screen and (max-width:767px) {
     #approach{
-        width: inherit;
-        height: 1100px;
+        height: auto;
         margin-top: 0px;
-        display: inline-flex;
-        align-items: flex-start;
-        justify-content: flex-end;
-    }
-    
-    #approach h2{
-        width: 540px;
-        height: 192px;
-        margin: 400px -144px 0px 0px;
-        z-index: 1;
-        color: black;
-    }
-    
-    #approach-content{
-        height: inherit;
-        width: 895px;
+        padding-bottom: 56px;
+        display: flex;
+        flex-direction: column;
         background-color: var(--red);
     }
     
+    #approach h2{
+        width: 327px;
+        height: 120px;
+        margin: 96px 0px 0px 24px;
+        color: white;
+    }
+    
+    #approach-content{
+        width: inherit;
+    }
+    
     #approach-guidelines{
-        width: 504px;
-        height: auto;
-        display:flex;
-        margin: 200px 0px 0px 285px;
-        flex-direction: column;
+        width: 327px;
+        margin: 49px 0px 0px 24px;
     }
     
     .guideline-container{
-        color: white;
-        margin-bottom: 56px;
+        margin-bottom: 40px;
     }
-    
-    .guideline-point-number{
-        width: inherit;
-        height: 88px;
-        font: 800 80px/88px 'Commissioner-ExtraBold';
-        opacity:0.25;
-    }
-    
+
     .guideline-point-content{
-        width: 445px;
-        height: auto;
-        float: right;
+        width: 309px;
         margin-top: -44px;
     }
     
     .guideline-point-header{
         width: inherit;
-        height: 32px;
-        font: 400 20px/32px 'Commissioner-ExtraBold';
-        margin-bottom: 24px;
+        height: 25px;
+        font: 400 15px/25px 'Commissioner-ExtraBold';
+        margin-bottom: 15px;
     }
 }
