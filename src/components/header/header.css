@@ -67,4 +67,33 @@ header{
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    header{
+        height: 708px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    #header-mainContent{
+        width: inherit;
+        height: 508px;
+        margin: 56px 0px 0px;
+    }
+
+    #header-mainContent p{
+        width: 327px;
+        margin-top: 15px;
+    }
+    
+    #header-button{
+        margin-top: 40px;
+    }
+    
+    #header-mainPic{
+        width: 375px;
+        height: 200px;
+        background: url(./img/headreMainPic-mobile.jpg) center/375px no-repeat;
+    }
+}

@@ -98,6 +98,14 @@ h2 {
 
 @media screen and (max-width:767px) {
     main {
-        width: 100vw;
+        width: 375px;
+    }
+
+    h1 {
+        font: 800 40px/40px 'Commissioner-ExtraBold';
+    }
+
+    .mainText {
+        font: 400 15px/25px 'Commissioner-Regular';
     }
 }
