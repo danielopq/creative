@@ -96,4 +96,8 @@ h2 {
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    main {
+        width: 100vw;
+    }
+}

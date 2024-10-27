@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import './navBar.css';
 
 /**
@@ -6,6 +7,20 @@ import './navBar.css';
  * @returns {JSX.Element} - The NavBar component
  */
 const NavBar: React.FC = () => {
+    const refMobileIcon = useRef<HTMLButtonElement>(null);
+
+    const handleClick = (): void => {
+        if (refMobileIcon.current) {
+            if(refMobileIcon.current.className === 'mobileIconBurger'){
+                refMobileIcon.current.className = 'mobileIconCross';
+                document.getElementById('mobileMenu')!.style.display = 'block';
+            }else{
+                refMobileIcon.current.className = 'mobileIconBurger';
+                document.getElementById('mobileMenu')!.style.display = 'none';
+            }
+        }
+    }
+
     return (
         <nav id="desktopNavBar">
             <menu id="desktopMenu">
@@ -14,7 +29,16 @@ const NavBar: React.FC = () => {
                     <button className='menuButton'>Service</button>
                     <button className='menuButton'>Projects</button>
                 </div>
-                <button id="desktopMenu-scheduleBt" className='standarButton'>Schedule a Call</button>
+                <button id="desktopMenu-scheduleBt" className='standardButton'>Schedule a Call</button>
+            </menu>
+            <button ref={refMobileIcon} id="mobileIcon" className='mobileIconBurger' onClick={() => handleClick()}></button>
+            <menu id="mobileMenu">
+                <div>
+                    <button className='menuButton'>About</button>
+                    <button className='menuButton'>Service</button>
+                    <button className='menuButton'>Projects</button>
+                    <button id="mobileMenu-scheduleBt" className='standardButton'>Schedule a Call</button>
+                </div>
             </menu>
         </nav>
     )

@@ -1,6 +1,9 @@
 #desktopNavBar{
     width: 1440px;
     height: 178px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     background: url('./img/logo.svg') 165px 50%/161px no-repeat;
 }
 
@@ -41,15 +44,9 @@
 }
 
 #desktopMenu-scheduleBt{
-    width: auto;
     height: 64px;
     padding: 23px 45px;
     background-color:var(--bgBlack);
-    color: white;
-    font: 400 16px/1 'Commissioner-ExtraBold';
-    border:none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 @media(hover:hover){
@@ -58,12 +55,64 @@
     } 
 }
 
+#mobileIcon{
+    width: 24px;
+    height: 20px;
+    margin-right: 24px;
+    border: none;
+    background-color: transparent;
+    cursor:pointer;
+    display: none;
+}
+
+.mobileIconBurger{
+    background: url('./img/icon-hamburger.svg') center/24px no-repeat;
+}
+
+.mobileIconCross{
+    background: url('./img/icon-cross.svg') center/20px no-repeat;
+}
+
+#mobileMenu{
+    width: 252px;
+    height: 292px;
+    position: absolute;
+    display: none;
+    z-index: 3;
+    padding: 32px 27px 0px;
+    top:110px;
+    background-color: var(--bgBlack);
+    right: 26px;
+}
+
+#mobileMenu div{
+    width: 199px;
+    height: 232px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#mobileMenu button[class='menuButton']{
+    font: 400 18px/32px 'Commissioner-Regular';
+}
+
+#mobileMenu-scheduleBt{
+    height: 64px;
+    padding: 23px 44px;
+    background-color:var(--red);
+}
+
+
+
 /*############################## TABLET VERSION ##############################*/
 
 @media (min-width: 768px) and (max-width: 1024px) {
     #desktopNavBar{
         width: inherit;
         background-position: 39px 50%;
+        border: solid 1px red;
     }
     
     #desktopMenu{
@@ -89,4 +138,18 @@
 
 /*############################## MOBILE VERSION ##############################*/
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:767px) {
+    #desktopNavBar{
+        width: inherit;
+        height: 110px;
+        background: url('./img/logo.svg') 24px 50%/161px no-repeat;
+    }
+    
+    #desktopMenu{
+        display: none;
+    }
+
+    #mobileIcon{
+        display: block;
+    }
+}
