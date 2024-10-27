@@ -1,7 +1,7 @@
 #approach{
     width: inherit;
     height: 1100px;
-    margin-top: -200px;
+    margin-top: -196px;
     display: inline-flex;
     align-items: flex-start;
     justify-content: flex-end;
@@ -10,7 +10,7 @@
 #approach h2{
     width: 540px;
     height: 192px;
-    margin: 400px -144px 0px 0px;
+    margin: 400px -127px 0px 0px;
     z-index: 1;
     color: black;
 }
