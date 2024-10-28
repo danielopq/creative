@@ -19,9 +19,9 @@ Overall, the landing page effectively combines aesthetics and functionality, pro
 
 ### Screenshots
 
-- [desktop version](https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/home-desktop.png)
-- [tablet version](https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/home-tablet.png)
-- [mobile version](https://github.com/danielopq/Coffeeroasters/blob/main/screeshots/home-mobile.png)
+- [desktop version](https://github.com/danielopq/creative/blob/main/screeeshots/desktop.png)
+- [tablet version](https://github.com/danielopq/creative/blob/main/screeeshots/mobile.png)
+- [mobile version](https://github.com/danielopq/creative/blob/main/screeeshots/tablet.png)
 
 ### Links
 
